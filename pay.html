@@ -1,0 +1,93 @@
+<!-- Created by Kshitija Raut -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          form {
+
+    padding: 25px;
+
+    margin: 25px;
+
+    box-shadow: 0 2px 5px #f5f5f5; 
+
+    background: #f5f5f5; 
+
+    }
+
+    input, textarea {
+
+    width: calc(100% - 18px);
+
+    padding: 8px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #1c87c9;
+
+    outline: none;
+
+    }
+
+    input::placeholder {
+
+    color: #666;
+
+    }
+
+    
+
+    #myBtn {
+
+      width: 100%;
+
+      padding: 10px;
+
+      border: none;
+
+      background-color: #1c87c9; 
+
+      font-size: 16px;
+
+      font-weight: 400;
+
+      color: white;
+
+      }
+      </style>
+    </head>
+    <body>
+    <p>Scan the QR code pay 1000₹ Indian rupees and fill the form after sumbiting the form course will be forwarded to your gmail ID within 24hours. If we delay plz. inform us on help section under menu on our home page.</p>
+    <br>
+    <br>
+   <img src="qr.jpg" alt="Barbie" width="100%" height="100%"/>
+   <br>
+   <br>
+   <form action="https://formspree.io/f/xvonykba" method="POST">
+  <div id="connect">
+        <h3>form</h3>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Full name" required>
+          <input type="text" name="email" placeholder="Email" required>
+          <input type="text" name="country" placeholder="Country" required>
+          <input type="text" name="phone" placeholder="Phone number" required>
+          
+          <input type="date" id="date" name="date" placeholder="calender" required>
+          
+          <input type="time" id="time" name="time" placeholder="time" required>
+
+        </div>
+        <p>Message</p>
+        <div>
+          <textarea rows="4" placeholder="optional"></textarea>
+        </div>
+        <button id="myBtn" type="submit">Submit</button>
+      </form>
+   
+        
+    </body>
+</html>
