@@ -1,94 +1,371 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <!-- menu de navegacion -->
-    
-    <nav>
-        <h3>Trade 7</h3>
-        <!-- boton -->
-        <button onclick="abrir()" 
-        id="but">
-        <!-- imagen boton -->   
-            <img src="https://cdn-icons-png.flaticon.com/512/20/20569.png" width="25px" heigth="25px">
-            
-        </button>
-     </nav>
+<!-- Created by YostDev -->
 
-     <!-- menu -->
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="Index.css">
+        	<style>
+        	/* Created by YostDev */
+
+nav {
+    background: white ;
+    padding: 6px; width: 97%;
+    position: absolute ;
+    left: 0px; top: 0px;
+}
+button {
+    float: right ; margin-top: -46px;
+    margin-right: 45px;
+    border-radius: 2px; background: rgba(0, 0, 0, 0);
+    width: 30px; height: 30px;
+    border: none;
+}
+h3 {
+    margin-left: 30px; color: orange;
+}
+body {
+    color: black;
+    background: white;
+    font-family: Poppins;
+     background: rgb(245 245 255);
+}
+.content {
+    background: rgb(245 245 255);
+    padding: 6px; width: 97%;
+    top: 70px; position: absolute;
+    left: 0px; text-align: center;
+}
+.option {
+    background: white;
+    padding: 6px;
+    text-align: center;
+}
+.menu {
+    margin-top: 55px;
+}
+#btn-back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(200 200 250);
+  color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  border-radius: 50%;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#btn-back-to-top:hover {
+  background-color: #333;
+}
+a {
+    text-decoration: none;
+    color: rgb(70 70 40);
+}
+.pro-cont {
+    background-color: white;
+    width: 80%; padding: 6px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 35px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* importante */
+
+.title-log {
+    font-size: 60px;
+}
+.sub {
+    margin-top: -45px;
+}
+.text-space {
+    width: 85%;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.pro-img {
+    width: 80%;
+    border-radius: 10px;
+}
+.myhr {
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    animation: hrmov 0.8s ease-in;
+}
+.visit {
+    background-color: white;
+    width: 70%;
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 10px;
+}
+h2 {
+    color: rgb(0 0 50);
+}
+
+@keyframes hrmov {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+footer {
+    position: absolute ;
+    bottom: -5350px;
+    background-color: rgb(100 100 200);
+    padding: 5px;
+    width: 98%; height: 180px;
+    left: 0px; 
+    color: white;
+    text-align: center;
+}
+
+hr{
+    width: 80%;
+    border: 2px solid;
+}
+
+.product-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  margin: 20px;
+  text-align: center;
+  margin-left:30%;
+}
+
+.product-card img {
+  width: 80%;
+  height: 60%;
+  margin: 20px 0;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.product-card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+</style>
+    </head>
+    <body>
         
-     <div class="menu">
-        <div class="option">
-            <p>
-              <hr>
-              <!--a href="https://instagram.com/25_fabi_?igshid=MzNlNGNkZWQ4Mg==">
-                  
-              <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="25px" heigth="25px">
-                 
-              </a-->
-            </p>
-         </div>
-   </div>
-
-   <!-- opciones -->
-   <div>
-    <div class="option">
-         <a href="#pepe">About us</a>
-    </div>
-    <div class="option">
-         <a href="#popo">Courses</a>
-    </div>
-    <!-- <div class="option">
-         <a href="#pipi">Technologies</a>
-    </div> -->
+        <!-- menu de navegacion -->
+    
+        <nav>
+           <h3>Trade 7</h3>
+           <!-- boton -->
+           <button onclick="abrir()" 
+           id="but">
+           <!-- imagen boton -->   
+               <img src="https://cdn-icons-png.flaticon.com/512/20/20569.png" width="25px" heigth="25px">
+               
+           </button>
+        </nav>
+    
+        <!-- menu -->
+        
+        <div class="menu">
+             <div class="option">
+                 <p>
+                   <hr>
+                   <!--a href="https://instagram.com/25_fabi_?igshid=MzNlNGNkZWQ4Mg==">
+                       
+                   <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="25px" heigth="25px">
+                      
+                   </a-->
+                 </p>
+              </div>
+        </div>
+    
+        
+        <!-- opciones -->
+        <div>
+            <div class="option">
+                 <a href="#pepe">About us</a>
+            </div>
+            <div class="option">
+                 <a href="#popo">Courses</a>
+            </div>
+            <div class="option">
+                 <a href="#pipi">help</a>
+            </div>
+        </div>
+        
+        <!-- contenido -->
+        
+        <div class="content" id="cont">
+            <div>
+             <h1 class="title-log">Trade 7</h1>
+             <hr class="myhr">
+             <p class="sub">Trading Course Provider</p>
+             <br>
+             <div class="text-space">
+                <p>Are you tired of losing money in the stock market? Do you want to learn how to trade like a pro? Our trading course is designed to teach you everything you need to know about trading. From the basics of technical analysis to advanced trading strategies, our course covers it all. With our proven track record of success, you can be confident that you’re learning from the best. Sign up for our course today and start your journey towards financial freedom!
+                </p>
+             </div>
+             <img src="https://trackpeople.es/images/proyectos/ilustracion-proyectos.png" width="94%">
+             <h4 class="flecha">↓</h4>
+             <br><br>
+             <h2 id="popo">Courses</h2>
+             <div class="text-space">
+                 <p>Option trading is a type of trading that involves buying and selling options contracts on the public exchanges. Options trading can seem more complicated than it is. If you’re looking for a simple options trading definition, it goes something like this: Options trading is the trading of instruments that give you the right to buy or sell a specific security on a specific date at a specific price. If you want to learn more about option trading, you can check out this beginner’s guide.</p>
+             </div>
+             <br>
+             <hr>
+             	
+             <div class="product-card">
+  <img src="https://caracol.com.co/resizer/ttRhQ_SvNYQcpeKg5p4DbZx_wdQ=/1600x1200/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/DYLGDME2WBDUNKN5V2JOFWINAA.jpeg " alt="Imagen del producto">
+  <h3>option trading</h3>
+  <p>Best option trading course</p>
+  <p class="price">1000₹ Indian Rupees</p>
+ <a href="pay.html"> <button>buy now</button></a>
 </div>
-
-<!-- contenido -->
+             
+             <!-- proyecto numero 1-->
+             <!-- <div class="pro-cont">
+                 <img src="https://dl.dropbox.com/s/xl26f9fmcw3o7ww/Screenshot_20230619-174715_Sololearn.jpg" class="pro-img">
+                 <p>How to make a language 
+                 translator.</p><br><br>
+                 <button class="visit"><a href="https://code.sololearn.com/WZX1uz2pspc0/?ref=app">look web</a></button>
+             </div>
+             <br> -->
+              <!-- proyecto numero 2-->
+             <!-- <div class="pro-cont">
+                 <img src="https://dl.dropbox.com/s/8blif2fcg4eh0q0/Screenshot_20230619-174707_Sololearn.jpg" class="pro-img">
+                 <p>Tags you probably didn't know existed.</p><br><br>
+                 <button class="visit"><a href="https://code.sololearn.com/Wrz5JwEgBC2R/?ref=app">Look web</a></button>
+             </div>
+             <br> -->
+              <!-- proyecto numero 3 -->
+             <!-- <div class="pro-cont">
+                 <img src="https://dl.dropbox.com/s/ciags5uoc35rmsz/Screenshot_20230619-174647_Sololearn.jpg" class="pro-img">
+                 <p>Your phone has been hacked!</p><br><br>
+                 <button class="visit"><a href="https://code.sololearn.com/Wx0Jc889NHv3/?ref=app">Look web</a></button> 
+             </div>
+            </div> -->
+            
+            <!-- contenidos -->
+            <!-- <br>
+             <hr class="myhr">
+            <h2 id="pepe">About me</h2>
+            <div class="text-space">
+                <p>Hello! My real name is Fabián but I like to be called Fabi or YostDev, which is my name that I use on the internet. <br> I started programming at the age of 9, I used Scratch which is a web page to program games with blocks. Then I wanted to go to the next level and learned C++, my first programming language. I always loved programming... But I don't know why, I just liked it, it felt satisfying to see how my elementary school classmates were amazed when I made a calculator with C++. Leaving that aside, let's go to me, who am I?, easy! I am a high school student, I am 15 years old, I am from Argentina.<br></p>
+                <br><img src="https://projects-static.raspberrypi.org/projects/getting-started-scratch/2138207c17a4969ae345e6fd0bae75ddc25ec881/es-LA/images/ScratchGuide_Banner.png" width="90%" style="border-radius: 10px;"><br>
+                <hr class="myhr">
+                <h2 id="pipi">Technologies</h2>
+                <div class="text-space">
+                    <p>I had previously said that the first programming language I learned was C++, but that doesn't mean it's the one I know the most about, I just learned how to create a function in C++! Since I learned HTML Sololearn caught my attention and from then until now I have practiced every day.<br>These are the programming languages ​​I learned: </p>
+                </div> -->
+                <!--HTML-->
+                 <!-- <div class="pro-cont">
+                 <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" class="pro-img">
+                 <h2>100%</h2>
+                 </div><br> -->
+                 <!--CSS-->
+                 <!-- <div class="pro-cont">
+                 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" class="pro-img">
+                
+                 <h2>100%</h2> 
+                 </div><br> -->
+                 <!--C++-->
+                 <!-- <div class="pro-cont">
+                 <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" class="pro-img">
+                 
+                 <h2>70%</h2>
+                 </div><br> -->
+                 <!--PHP-->
+                 <!-- <div class="pro-cont">
+                 <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" class="pro-img">
+                 
+                 <h2>40%</h2>
+                 </div><br> -->
+                 <!--Python-->
+                 <!-- <div class="pro-cont">
+                 <img src="https://img.freepik.com/free-icon/snakes_318-368381.jpg" class="pro-img">
+                 
+                 <h2>60%</h2> 
+                 </div><br>-->
+                 <!--Scratch-->
+                 <!-- <div class="pro-cont">
+                 <img src="https://cdn-icons-png.flaticon.com/512/919/919846.png" class="pro-img">
+                 
+                 <h2>100%</h2>
+                 <p>haha I don't know if this counts. ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯</p>
+                 </div>
+            </div>
+            <br><br><br><br><br><br><br>
+        </div> -->
         
-<div class="content" id="cont">
-    <div>
-     <h1 class="title-log">Trade 7</h1>
-     <hr class="myhr">
-     <p class="sub">Trading Course Provider</p>
-     <br>
-     <div class="text-space">
-        <p>Are you tired of losing money in the stock market? Do you want to learn how to trade like a pro? Our trading course is designed to teach you everything you need to know about trading. From the basics of technical analysis to advanced trading strategies, our course covers it all. With our proven track record of success, you can be confident that you’re learning from the best. Sign up for our course today and start your journey towards financial freedom!
-        </p>
-     </div>
-     <img src="https://trackpeople.es/images/proyectos/ilustracion-proyectos.png" width="94%">
-     <h4 class="flecha">↓</h4>
-     <br><br>
-     <h2 id="popo">Courses</h2>
-     <div class="text-space">
-         <p>Option trading is a type of trading that involves buying and selling options contracts on the public exchanges. Options trading can seem more complicated than it is. If you’re looking for a simple options trading definition, it goes something like this: Options trading is the trading of instruments that give you the right to buy or sell a specific security on a specific date at a specific price. If you want to learn more about option trading, you can check out this beginner’s guide.</p>
-     </div>
-     <br>
-     <hr>
+        <footer>
+            <hr>
+            <p>Copyright © The Craftii</p>
+            <!-- <a href="https://yosstdev.github.io/Miportafolio/">> My Portfolio </a><br>
+            <a href="https://www.sololearn.com/Profile/28895073/?ref=app">> follow me </a> -->
+        </footer>
+        
+        <!-- boton volver al inicio -->
+        <a href="#" id="btn-back-to-top" title="Volver arriba">^</a>
+        <script>
+        	// Created by YostDev 
 
-     <footer>
-        <hr>
-        <p>Copyright © The Craftii</p>
-        <!-- <a href="https://yosstdev.github.io/Miportafolio/">> My Portfolio </a><br>
-        <a href="https://www.sololearn.com/Profile/28895073/?ref=app">> follow me </a> -->
-    </footer>
+
+var boton = true;
+
+function abrir(){
+   if(boton == true){
+   
+        var mover = document.getElementById("cont");
+    mover.style.transition = "0.3s"
+    mover.style.top = "295px";
+    boton = false; 
+    var imag = document.getElementById("but").innerHTML = "<img src=\"https://cdn0.iconfinder.com/data/icons/octicons/1024/x-512.png\" width=\"30px\" height=\"30px\">";
     
-    <!-- boton volver al inicio -->
-    <a href="#" id="btn-back-to-top" title="Volver arriba">^</a>
-    
-
-
-
-
-
-
-
-
-<script src="index.js"></script>
-
-</body>
-</html>
+   } else if(boton == false){
+   
+        var mover = document.getElementById("cont");
+    mover.style.transition = "0.3s"
+    mover.style.top = "70px";
+    boton = true;
+     var imag = document.getElementById("but").innerHTML = "<img src=\"https://cdn-icons-png.flaticon.com/512/20/20569.png\" width=\"25px\" height=\"25px\">";
+     
+   }
+}
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('btn-back-to-top');
+  if (window.pageYOffset > 40) {
+    btn.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+  }
+});
+</script>
+    </body>
+    </html>
