@@ -135,11 +135,12 @@ body {margin:0px;font-family:Arial}
     color:white;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .box1 {
     height: 250px;
   }
-
+}
+    
 .coding1{
     background: url("https://bekerine.github.io/Start-ups/coding.png");
     width:150px;
@@ -171,10 +172,11 @@ button{
     color:white;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .box2 {
     height: 250px;
   }
+}
 
 .coding2{
     background: url("https://bekerine.github.io/Start-ups/coding.png");
@@ -207,10 +209,11 @@ button{
     color:white;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .box3{
     height: 250px;
   }
+}
 
 .coding3{
     background: url("https://bekerine.github.io/Start-ups/coding.png");
@@ -278,6 +281,7 @@ p{
     margin-left:auto;
     margin-right:auto;
   }
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -324,6 +328,7 @@ p{
   .box4 {
     height: 250px;
   }
+}
 
 .coding4{
     background: url("https://bekerine.github.io/Start-ups/coding.png");
