@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 2rem;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#last{
+  display: none;
+}
+
+
+
+.button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #4CAF50; /* Green border */
+  color: #4CAF50; /* Green text */
+  padding: 10px 24px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s; /* 0.4 second transition */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green background on mouse-over */
+  color: white; /* White text on mouse-over */
+}
+
+
+img{
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<h1>Guide How To Do Payment</h1>
+
+<p>go down this page</p>
+<img src="a.png" alt="" srcset="">
+
+<p>choose between premiun and normal plan</p>
+<img src="b.png" alt="" srcset="">
+
+<p>press proceed to pay button</p>
+<img src="c.png" alt="" srcset="">
+
+<p>complete the payment process</p>
+
+<p>fill the form</p>
+
+<p>WOW! now you're in our team now</p>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Premium</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Normal</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')" id="last">Tokyo</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Take our premium plan</h3>
+  <a href="form.html" target="_blank"><button class="button">Proceed to Pay</button></a>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Take our normal plan</h3>
+  <a href="form.html" target="_blank"><button class="button">Proceed to Pay</button></a>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
